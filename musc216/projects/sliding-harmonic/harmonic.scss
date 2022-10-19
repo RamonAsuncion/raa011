@@ -1,0 +1,46 @@
+.set-of-sliders {
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    padding: 8px 16px;
+}
+  
+  
+.previous {
+    background-color: #cdcccc;
+    color: black;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+.slider {
+    width: 600px;
+    background: #201f1f; 
+    display : inline-block; 
+
+    &.red {
+        background-color: red;
+    }
+    &.blue {
+        background-color: blue;
+    }
+    &.green {
+        background-color: green;
+    }
+    &.orange {
+        background-color: orange;
+    }
+    &.purple {
+        background-color: purple;
+    }
+    &.pink {
+        background-color: pink;
+    }
+    &.gray {
+        background-color: gray;
+    }
+}
+
