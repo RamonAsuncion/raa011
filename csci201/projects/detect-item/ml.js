@@ -34,8 +34,8 @@ function draw() {
     if (label == "Phone") {
         emoji = "📱";
     } 
-    else if (label == "Book") {
-        emoji = "📚 ";
+    else if (label == "Human") {
+        emoji = "🙂";
     }
     else if (label == "CD") {
         emoji = "💿";
@@ -45,6 +45,9 @@ function draw() {
     }
     else if (label == "Shoe") {
         emoji = "👟";
+    }
+    else if (label == "Fruit") {
+        emoji = "🍒";
     }
 
     // Draw the emoji
@@ -74,7 +77,7 @@ function gotResult(error, results) {
       return;
     }
 
-    if (results[0].confidence > 0.85) {
+    if (results[0].confidence > 0.99) {
         label = results[0].label
     } else {
         label = "";
