@@ -5,10 +5,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ramon Asuncion">
+	<meta name="description" content="Personal Computer Science Projects">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
 
 	<title>tech wizard</title>
 	<link rel="icon" type="image/x-icon" href="./images/wizard.ico">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="canonical" href="https://eg.bucknell.edu/~raa011">
 
 	<!--Google Font Silkscreen-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,22 +50,14 @@
 		<h3>b.s. <span class="small-text">in</span> computer science</h3>
 		<img src="./images/crazy.gif" alt="dance" width="300" height="300">
 	</div>
-
-
 	<div class="projects">
 		<h2 class="courses-title">CS Courses</h2>
 		<ul class="courses">
 			<li><a href="musc216/musc">MUSC 216 Projects</a></li>
 			<li><a href="csci201/csci">CSCI 201 Projects</a></li>
-			<s>
-				<li><a href="math227/math" class="disabled">MATH 227 Projects</a></li>
-			</s>
-			<s>
-				<li><a href="csci205/csci" class="disabled">CSCI 205 Projects</a></li>
-			</s>
-			<s>
-				<li><a href="csci204/csci" class="disabled">CSCI 204 Projects</a></li>
-			</s>
+			<li><a href="math227/math" class="disabled"><s>MATH 227 Projects</s></a></li>
+			<li><a href="csci205/csci" class="disabled"><s>CSCI 205 Projects</s></a></li>
+			<li><a href="csci204/csci" class="disabled"><s>CSCI 204 Projects</s></a></li>
 		</ul>
 	</div>
 	<div class="footer">
@@ -70,8 +66,9 @@
 		// The list of the domains.
 		$personal_website = "https://www.ramonasuncion.com";
 		$github_website = "https://github.com/RamonAsuncion";
-
-		function url_online($url) {
+			
+		function url_online($url)
+		{
 			$handle = curl_init($url);
 
 			curl_setopt($handle,  CURLOPT_RETURNTRANSFER, TRUE);
@@ -87,20 +84,19 @@
 			return ($httpCode === 200) ? "working" : "down";
 		};
 
-
 		// Check if the listed websites are online.	
 		$status1 = url_online($personal_website);
 		$status2 = url_online($github_website);
 
 		echo <<<EOT
-		<p>
-			my website: <a href=$personal_website target="_blank" rel="noopener noreferrer">ramonasuncion.com</a>
-			status: $status1
-			<br>
-			github: <a href="$github_website" target="_blank" rel="noopener noreferrer">github.com/RamonAsuncion</a>
-			status: $status2
-		</p>
-		EOT;
+			<p>
+				my website: <a href=$personal_website target="_blank" rel="noopener noreferrer">ramonasuncion.com</a>
+				status: $status1
+				<br>
+				github: <a href="$github_website" target="_blank" rel="noopener noreferrer">github.com/RamonAsuncion</a>
+				status: $status2
+			</p>
+			EOT;
 		?>
 	</div>
 </body>

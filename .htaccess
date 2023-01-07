@@ -1,15 +1,16 @@
-# Apache Server
+DirectoryIndex index.php
+
 RewriteEngine On
 
-# Rename file extensions
+# Remove the .html extension from a HTML file.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-# Force Trailing Slash
+# Remove the .php extension from a PHP file.
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !(.*)/$
-RewriteRule ^(.*)$ /$1/ [L,R=301]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
-# Force SSL
-RewriteCond     %{SERVER_PORT} ^80$
-RewriteRule     ^(.*)$ https://%{SERVER_NAME}%{REQUEST_URI} [L,R=301]
+# Force HTTPS.
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
