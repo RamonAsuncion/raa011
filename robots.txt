@@ -1,2 +1,2 @@
 User-agent: *
-Allow: /
+Disallow: /~raa011/public/summer-research-2023/

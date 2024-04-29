@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cache Activity</title>
+    <link rel="stylesheet" href="memory.css">
+  </head>
+  <body>
+    <h1>Cache Activity</h1>
+    <p>The default values are from the Final Exam Review Exercises</p>
+    <p>The Memory Contents table below shows the (partial) contents of a
+      <input type="number" id="address-bits" value="12" style="width: 50px;">-bit memory system.
+        (An underscore ‘_’ represents a space.) This memory has a
+      <input type="number" id="cache-size" value="64" style="width: 50px;">-byte
+      <input type="number" id="cache-associativity" value="2" style="width: 50px;">-way
+        associative cache with
+      <input type="number" id="cache-index" value="4" style="width: 50px;"> indexes, i.e.,
+        each way has <input type="number" id="word-size" value="8" style="width: 50px;">  words.
+        Complete the missing information from the Memory Accesses table
+        for the given memory access sequence. Note that the memory access sequence is expressed
+        in byte. Then show the final state of the cache in the Final Cache Status after
+        performing the indicated memory accesses.</p>
+    <button id="calculate-btn">Calculate</button>
+    <h2>Results:</h2>
+    <p>Block Size: <span id="block-size-bytes"></span></p>
+    <p>Block Offset Bits: <span id="block-offset-bits"></span></p>
+    <p>Cache Index Bits: <span id="cache-index-bits"></span></p>
+    <p>Tag Bits: <span id="tag-bits"></span></p>
+    <h3>Table 1: Memory Contents.</h3>
+    <table id="memory-contents"></table>
+    <button id="add-row-memory-contents">Add Row</button>
+    <button id="remove-row-memory-contents">Remove Row</button>
+    <h3>Table 2: Memory Accesses Sequence for the Given <span id="cache-associativity-display"></span>-way Associative Cache.</h3>
+    <table id="memory-accesses"></table>
+    <button id="add-row-memory-accesses">Add Row</button>
+    <button id="remove-row-memory-accesses">Remove Row</button>
+    <h3>Table 3: Final Cache Status.</h3>
+    <div class="row">
+      <div class="column">
+        <table id="memory-status-1"></table>
+        <p>Set 0</p>
+      </div>
+      <div class="column">
+        <table id="memory-status-2"></table>
+        <p>Set 1</p>
+      </div>
+    </div>
+    <button id="add-row-final-cache-status">Add Row</button>
+    <button id="remove-row-final-cache-status">Remove Row</button>
+    <button id="process-cache-btn">Calculate</button>
+    <script src="memory.js"></script>
+  </body>
+</html>
+

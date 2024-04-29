@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Memory Activity</title>
+    <link rel="stylesheet" href="system.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <h1>Memory Activity</h1>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Random Question Generator</div>
+        <div class="swiper-slide">Calculator Mode</div>
+        <div class="swiper-slide">Exam II Question</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <p id="question">Given a computing system P with a clock speed of <span id="clockSpeedPlaceholder"></span> GHz. Its main memory
+      access takes <span id="memoryAccessTimePlaceholder"></span> ns. You are running an application program A, which has
+      <span id="totalInstructionsPlaceholder"></span> instructions; of which <span
+        id="memoryInstructionsPlaceholder"></span> access memory. Assume program A results in a cache miss rate of <span
+        id="cacheMissRatePlaceholder"></span>% and the cache hit time is <span id="cacheHitTimePlaceholder"></span> ns,
+      answer the following questions:</p>
+    <form>
+      <fieldset>
+        <legend>Question 1</legend>
+        <p>What is the clock cycle time of the processor? That is, how much time is needed for one clock cycle?</p>
+        <label for="userClockCycleTime">Enter your answer for Question 1:</label>
+        <input type="text" id="userClockCycleTime">
+        <p id="clockCycleTime"></p>
+      </fieldset>
+      <fieldset>
+        <legend>Question 2</legend>
+        <p>What is AMAT (in nanoseconds, or ns) for program A?</p>
+        <label for="userAMAT">Enter your answer for Question 2:</label>
+        <input type="text" id="userAMAT">
+        <p id="AMAT"></p>
+      </fieldset>
+      <fieldset>
+        <legend>Question 3</legend>
+        <p>What is the average CPI, assuming CPI of <span id="cpi">2</span> for non-memory instructions?</p>
+        <label for="userAverageCPI">Enter your answer for Question 3:</label>
+        <input type="text" id="userAverageCPI">
+        <p id="averageCPI"></p>
+      </fieldset>
+      <fieldset>
+        <legend>Question 4</legend>
+        <p>How much time will it take to run the program?</p>
+        <label for="userTotalTime">Enter your answer for Question 4:</label>
+        <input type="text" id="userTotalTime">
+        <p id="totalTime"></p>
+      </fieldset>
+    </form>
+    <br>
+    <button type="button" onclick="calculateValues()">Check Answers</button>
+    <p>Attempts left: <span id="attempts"></span></p>
+  </body>
+  <script src="system.js"></script>
+</html>

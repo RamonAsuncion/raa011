@@ -1,0 +1,146 @@
+<html>
+<head>
+  <title>DMA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>DMA</h1>
+  <h2>Direct Access Memory</h2>
+  <p>Direct Access Memory (DMA) is a method of transferring data from one place to another without involving the CPU. It is used to transfer data between the I/O device and memory. It is faster than interrupt driven I/O since the CPU is not involved in the data transfer. The CPU sets up the DMA controller and then it transfers the data directly to the memory. The CPU is free to do other work while the data transfer is in progress.</p>
+
+  <div class="center">
+    <img src="images/dma.jpg" alt="DMA" style="width:600px;height:300px;">
+  </div>
+
+  <h2>How it Works</h2>
+  <p>DMA is a method of data transfer that allows the CPU to work on other tasks while the data transfer is in progress. The DMA controller is a separate chip that is connected to the system bus. When a DMA transfer is initiated, the DMA controller takes control of the system bus and transfers the data directly to the memory. The CPU is not involved in the data transfer. It is free to do other work while the data transfer is in progress. When the transfer is complete, the DMA controller releases control of the system bus and the CPU can resume its work.</p>
+
+  <h2>Advantages</h2>
+  <ul>
+    <li>It is faster than interrupt driven I/O since the CPU is not involved in the data transfer.</li>
+    <li>It allows the CPU to work on other tasks while the data transfer is in progress.</li>
+    <li>It is more efficient than interrupt driven I/O since the CPU is not interrupted.</li>
+  </ul>
+
+  <h2>Disadvantages</h2>
+  <ul>
+    <li>It requires additional hardware (DMA controller).</li>
+    <li>It requires additional programming (DMA controller).</li>
+    <li>It requires additional memory (DMA controller).</li>
+  </ul>
+
+  <h2>In summary</h2>
+  <p>This is how the DMA controller works!</p>
+  <ul>
+    <li>The CPU is executing a program that is stored
+      in memory.</li>
+    <li>The CPU initiates a DMA transfer.</li>
+    <li>The DMA controller takes control of the system bus.</li>
+    <li>The DMA controller transfers the data directly to the memory.</li>
+    <li>The CPU is not involved in the data transfer.</li>
+    <li>The CPU is free to do other work while the data transfer is in progress.</li>
+    <li>When the transfer is complete, the DMA controller releases control of the system bus.</li>
+    <li>The CPU can resume its work.</li>
+  </ul>
+
+
+  <!--Create a quiz using php-->
+  <h2>Quiz</h2>
+  <form action="quiz.php" method="post">
+    <ol>
+      <li>
+        <h3>What is DMA?</h3>
+        <div>
+          <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+          <label for="question-1-answers-A">A) Direct Memory Access </label>
+        </div>
+        <div>
+          <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+          <label for="question-1-answers-B">B) Direct Memory Allocation </label>
+        </div>
+        <div>
+          <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+          <label for="question-1-answers-C">C) Direct Memory Assignment </label>
+        </div>
+        <div>
+          <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+          <label for="question-1-answers-D">D) Direct Memory Association </label>
+        </div>
+      </li>
+      <li>
+        <h3>What is the function of DMA?</h3>
+        <div>
+          <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
+          <label for="question-2-answers-A">A) It is used to transfer data between the memory and I/O devices. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
+          <label for="question-2-answers-B">B) It is used to transfer data between the CPU and memory. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
+          <label for="question-2-answers-C">C) It is used to transfer data between the computer and memory. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
+          <label for="question-2-answers-D">D) It is used to transfer data between the computer and the GPU. </label>
+        </div>
+      </li>
+
+      <li>
+        <h3>What is the advantage of DMA?</h3>
+        <div>
+          <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
+          <label for="question-3-answers-A">A) It is faster than interrupt driven I/O since the CPU is not involved in the data transfer. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
+          <label for="question-3-answers-B">B) It allows the CPU to work on other tasks while the data transfer is in progress. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
+          <label for="question-3-answers-C">C) It is more efficient than interrupt driven I/O since the CPU is not interrupted. </label>
+        </div>
+        <div>
+          <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
+          <label for="question-3-answers-D">D) All of the above. </label>
+        </div>
+      </li>
+
+      <li>
+        <h3>What is the disadvantage of DMA?</h3>
+        <div>
+          <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
+          <label for="question-4-answers-A">A) It requires additional hardware (DMA controller). </label>
+        </div>
+        <div>
+          <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
+          <label for="question-4-answers-B">B) It requires additional programming (DMA controller). </label>
+        </div>
+        <div>
+          <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
+          <label for="question-4-answers-C">C) It requires additional memory (DMA controller). </label>
+        </div>
+        <div>
+          <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
+          <label for="question-4-answers-D">D) It requires additional software (DMA controller). </label>
+        </div>
+      </li>
+        <!--submit the forum-->
+        <input type="submit" value="Submit Quiz" />
+        <p>You must complete and submit all the questions to see your score!
+    </ol>
+  </form>
+
+    <h1>References</h1>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Direct_memory_access" target="_blank">https://en.wikipedia.org/wiki/Direct_memory_access</a></li>
+    <li><a href="https://www.tutorialspoint.com/direct-memory-access" target="_blank">https://www.tutorialspoint.com/direct-memory-access</a></li>
+    <li><a href="https://www.geeksforgeeks.org/direct-memory-access-dma" target="_blank">https://www.geeksforgeeks.org/direct-memory-access-dma</a></li>
+  </ul>
+
+  <br><br><br>
+  <a href="/~raa011/">Home</a>
+</body>
+</html>

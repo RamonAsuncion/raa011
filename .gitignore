@@ -3,4 +3,6 @@ node_modules/
 .sass-cache/
 .vscode/
 *.css
-TODO
+src/
+public/summer-research-2023/
+.htaccess

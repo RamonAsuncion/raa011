@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Allocation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="memory">
+        <div class="blocks">
+            <!-- Memory blocks will be dynamically created here -->
+        </div>
+        <div class="controls">
+            <label for="processSize">Enter Process Size:</label>
+            <input type="number" id="processSize" min="1">
+            <button onclick="allocateMemory('firstFit')">First Fit</button>
+            <button onclick="allocateMemory('bestFit')">Best Fit</button>
+            <button onclick="allocateMemory('worstFit')">Worst Fit</button>
+        </div>
+    </div>
+    <div class="output">
+        <p id="allocationResult">Allocation result will be displayed here.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
