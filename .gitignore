@@ -6,3 +6,4 @@ node_modules/
 src/
 public/summer-research-2023/
 .htaccess
+logs/

@@ -1,42 +1,43 @@
 <!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>AM Synthesis</title>
-    <link rel="icon" type="image/x-icon" href="/~raa011/images/note.ico">
-    <link rel="stylesheet" type="text/css" href="/~raa011/css/global.css">
-  </head>
 
-  <body>
-    <!--Button to go back to the projects page-->
-    <a href="../../musc.html" class="previous">&laquo;Back&raquo;</a>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>AM Synthesis</title>
+  <link rel="icon" type="image/x-icon" href="/~raa011/images/note.ico">
+  <link rel="stylesheet" type="text/css" href="/~raa011/public/css/global.css">
+</head>
 
-    <h3>Amplitude Modulation</h3>
-    <!-- start button -->
-    <input id="start_button" type="button" value="Start" style="width: 50px; background-color: green;">
-    <p>
-      <!-- carrier frequency -->
-      <input type="range" id="carrier_frequency_slider" value="440" min="0" max="5000" style="width: 600px;">
-      <span id="carrier_frequency_label">440</span> Hz. <i>carrier frequency</i>
-    <p>
-      <!-- modulator frequency -->
-      <input type="range" id="modulator_frequency_slider_0" value="0" min="0" max="5000" style="width: 600px;">
-      <span id="modulator_frequency_label_0">0</span> Hz. <i>modulator frequency</i>
-      <br><br>
-      <input type="range" id="modulator_frequency_slider_1" value="0" min="0" max="5000" style="width: 600px;">
-      <span id="modulator_frequency_label_1">0</span> Hz. <i>modulator frequency</i>
-      <br><br>
-      <input type="range" id="modulator_frequency_slider_2" value="0" min="0" max="5000" style="width: 600px;">
-      <span id="modulator_frequency_label_2">0</span> Hz. <i>modulator frequency</i>
-      <br><br>
+<body>
+  <!--Button to go back to the projects page-->
+  <a href="../../musc.html" class="previous">&laquo;Back&raquo;</a>
 
-      <select id="osc_select">
-        <option value="sine">Sine</option>
-        <option value="square">Square</option>
-        <option value="sawtooth">Sawtooth</option>
-        <option value="triangle">Triangle</option>
-      </select>
-  </body>
-  <script src="am.js"></script>
+  <h3>Amplitude Modulation</h3>
+  <!-- start button -->
+  <input id="start_button" type="button" value="Start" style="width: 50px; background-color: green;">
+  <p>
+    <!-- carrier frequency -->
+    <input type="range" id="carrier_frequency_slider" value="440" min="0" max="5000" style="width: 600px;">
+    <span id="carrier_frequency_label">440</span> Hz. <i>carrier frequency</i>
+  <p>
+    <!-- modulator frequency -->
+    <input type="range" id="modulator_frequency_slider_0" value="0" min="0" max="5000" style="width: 600px;">
+    <span id="modulator_frequency_label_0">0</span> Hz. <i>modulator frequency</i>
+    <br><br>
+    <input type="range" id="modulator_frequency_slider_1" value="0" min="0" max="5000" style="width: 600px;">
+    <span id="modulator_frequency_label_1">0</span> Hz. <i>modulator frequency</i>
+    <br><br>
+    <input type="range" id="modulator_frequency_slider_2" value="0" min="0" max="5000" style="width: 600px;">
+    <span id="modulator_frequency_label_2">0</span> Hz. <i>modulator frequency</i>
+    <br><br>
+
+    <select id="osc_select">
+      <option value="sine">Sine</option>
+      <option value="square">Square</option>
+      <option value="sawtooth">Sawtooth</option>
+      <option value="triangle">Triangle</option>
+    </select>
+</body>
+<script src="am.js"></script>
 
 </html>
